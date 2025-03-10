@@ -707,22 +707,22 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 50vh;
-        padding: 0 30px;
+        height: 80vh;
+        padding: 0;
         background-color: rgba(22, 22, 22, 0.856);
     }
 
     .abt h1{
         color: white;
-        font-size: 30px;
+        font-size: 40px;
     }
 
-    .abt p{
-        padding-top: 10px;
-        color: white;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 23px;
+    .skills{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 40px 40px 40px 40px ;
+
+        margin-top: 50px;
     }
 
     /* proj */
