@@ -152,11 +152,27 @@ header{
     font-size: 55px;
 }
 
-.abt p{
-    padding-top: 30px;
-    color: white;
-    font-weight: 500;
-    line-height: 24px;
+.skills{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px;
+    grid-template-rows: 45px 45px;
+    grid-gap: 50px;
+
+    cursor: pointer;
+}
+
+.skills p{
+    text-align: center;
+    align-content: center;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 100ms ease-in;
+}
+
+.skills p:hover{
+    background-color: #aaaaaa;
 }
 
 /* projects */
@@ -555,7 +571,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6git 0px;
+    gap: 30px;
     background-color: rgb(46, 46, 46);
     width: 100%;
     height: 80px;
@@ -585,7 +601,8 @@ footer{
 
     .navbar{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -644,7 +661,7 @@ footer{
     }
     
     .content{
-        margin-top: 20px;
+        margin-top: 23px;
         text-align: center;
         padding: 0;
     }
@@ -661,7 +678,7 @@ footer{
     }
     
     .content p{
-        padding-top: 15px;
+        padding-top: 30px;
         font-weight: 400;
         font-size: 15px;
     }
@@ -677,7 +694,7 @@ footer{
         align-items: center;
         justify-content: center;
         gap: 15px;
-        padding-top: 15px;
+        padding-top: 30px;
     }
     
     .icons i{
@@ -759,7 +776,95 @@ footer{
         font-size: 10px;
         line-height: 15px;
     }
+
+    /* background */
+    .container-background{
+        height: 260vh;
+    }
     
+    .back-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+    .cont-title{
+        font-size: 30px;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    .elem, .high, .coll{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 21rem;
+        height: 37rem;
+        border-radius: 30px;
+        padding: 50px 10px;
+        margin-top: 40px;
+    }
+    
+    .elem{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./pic/aelgback.jpg);
+        background-position-x: 40%;
+        background-position-y: 5%;
+    }
+    
+    .high{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./pic/cccsback.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 60%;
+        background-position-x: 80%;
+    }
+    
+    .coll{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./pic/cpcback.jpg);
+        background-position-x: 27%;
+        background-position-y: 1%;
+    }
+    
+    .elem-pic, .high-pic, .coll-pic{
+        box-shadow: -2px 0px 32px -8px rgba(0,0,0,0.75);
+        background-color: white;
+        border-radius: 100px;
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+    .elem img, .coll img, .high img{
+        height: 150px;
+    }
+    
+    .elem-back, .high-back, .coll-back{
+        line-height: 20pxpx;
+        font-size: 15px;
+        color: white;
+        padding: 0;
+        text-align: center;
+    }
+
+    .para ul li{
+        line-height: 17px;
+        text-align: center;
+        color: white;
+        font-weight: 300px;
+        text-decoration: underline;
+        font-size: 15px;
+    }
+    
+    .para ul li:nth-child(1){
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 10px;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
     /* contact */
     .contact-me {
         padding: 10px;
